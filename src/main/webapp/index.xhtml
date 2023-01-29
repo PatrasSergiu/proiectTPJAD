@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+</h:head>
+
+<h:body style="margin-left:50px">
+    <h:form>
+        <h2>Login</h2>
+        <p:inputText type="email" placeholder="Email" id="email" value="#{backBean.email}"/>
+        <br/>
+        <p:inputText type="password" placeholder="Password" id="password" value="#{backBean.password}"/>
+        <br/>
+        <p:commandButton actionListener="#{backBean.buttonAction}" value="Login"/>
+    </h:form>
+</h:body>
+</html>
